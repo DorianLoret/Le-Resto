@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Allura";
+  src: url(../fonts/Allura-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Light.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+a {
+  color: #11171F;
+  text-decoration: none;
+}
+
+body {
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+body:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #11171F;
+  -webkit-animation: animBefore 1.5s ease forwards;
+          animation: animBefore 1.5s ease forwards;
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+}
+
+@-webkit-keyframes animBefore {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes animBefore {
+  to {
+    opacity: 0;
+  }
+}
+
+.button {
+  cursor: pointer;
+  background: #21201E;
+  color: #EEEEEE;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  padding: 12px 40px;
+}
+/*# sourceMappingURL=index.css.map */

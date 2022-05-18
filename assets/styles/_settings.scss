@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "Allura";
+    src: url(../fonts/Allura-Regular.ttf);
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Light.ttf);
+}
+
+$font1: Allura, serif;
+$font2: Poppins, sans-serif;
+$font3: Roboto, sans-serif;
+$white1: #EEEEEE;
+$grey1: #D3C6BE;
+$grey2: #B8B8B8;
+$orange1: #A67245;
+$black1: #21201E;
+$black2: #11171F;
+
+@mixin border {
+    border-bottom: $grey2;
+    border-style: dashed;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+    cursor: pointer;
+}
+a {
+    color: $black2;
+    text-decoration: none;
+}
+
+body {
+    text-align: center;
+    font-family: $font2;
+    max-width: 1300px;
+    margin: 0 auto;
+
+    &:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: $black2;
+        animation: animBefore 1.5s ease forwards;
+        animation-delay: 0.15s;
+
+        @keyframes animBefore {
+            to {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+.button {
+    cursor: pointer;
+    background: $black1;
+    color: $white1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    padding: 12px 40px;
+}
