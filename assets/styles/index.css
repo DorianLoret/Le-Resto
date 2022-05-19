@@ -35,6 +35,7 @@ body {
   width: 100vw;
   height: 100vh;
   text-align: center;
+  background: #21201E;
 }
 
 span {
@@ -130,5 +131,205 @@ header nav li:hover {
   font-family: Roboto, sans-serif;
   letter-spacing: 10px;
   color: #B8B8B8;
+}
+
+.our-store {
+  height: 600px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  background: #EEEEEE;
+}
+
+.our-store .store-left {
+  height: 90%;
+  width: 95%;
+  margin: auto auto;
+  border: #A67245 dashed 1px;
+  padding: 10px;
+}
+
+.our-store .store-left span {
+  color: #A67245;
+  font-size: 3rem;
+}
+
+.our-store .store-left h2 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.our-store .store-left img {
+  margin: 20px 0 10px 0;
+  border-radius: 50%;
+}
+
+.our-store .store-left p {
+  font-family: Roboto, sans-serif;
+  margin: 20px;
+}
+
+.our-store .store-left h4 {
+  text-transform: uppercase;
+  font-family: Roboto, sans-serif;
+  color: #B8B8B8;
+}
+
+.our-store .container-right {
+  background: url(/assets/img/store-01.jpg) center/cover;
+}
+
+.space {
+  width: 100vw;
+  height: 70vh;
+}
+
+main .menu {
+  background: url(/assets/img/bg-menu-01.jpg) center/cover;
+  height: 45vw;
+}
+
+main .menu span {
+  display: block;
+  color: #A67245;
+  font-size: 3rem;
+}
+
+main .menu img {
+  margin-bottom: 20px;
+}
+
+main .menu ul {
+  width: 50%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .menu li {
+  color: #EEEEEE;
+  font-family: Roboto, sans-serif;
+  border-bottom: #EEEEEE 1px solid;
+  height: 35px;
+}
+
+main .menu .menu-abs {
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%);
+}
+
+main .menu .container {
+  height: 100vh;
+  width: 50%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 25% 25% 25% 25%;
+      grid-template-rows: 25% 25% 25% 25%;
+      grid-template-areas: "a b" "c d" "e f" "g h";
+  background: #EEEEEE;
+  margin-top: 20px;
+  border-top: 4px #A67245 solid;
+}
+
+main .menu .container .italian-source-mushroom {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: a;
+}
+
+main .menu .container .tenu-roast-source {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: c;
+}
+
+main .menu .container .salted-fried-chicken {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: e;
+}
+
+main .menu .container .imported-salmon-steak {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: g;
+}
+
+main .menu .container .fried-potatoes-with-garlic {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: b;
+}
+
+main .menu .container .roast-pork {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: d;
+}
+
+main .menu .container .crab-with-curry-sources {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: f;
+}
+
+main .menu .container .baked-potato-pizza {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: h;
+}
+
+main .menu .container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 15px;
+  border-bottom: 1px dashed #A67245;
+}
+
+main .menu .container div .container-block {
+  display: block;
+  border: none;
+}
+
+main .menu .container div img {
+  border-radius: 50px;
+}
+
+main .menu .container div h3 {
+  text-transform: uppercase;
+  color: #11171F;
+  font-family: Roboto, sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+main .menu .container div h4 {
+  font-family: Roboto, sans-serif;
+  color: #21201E;
+  font-weight: 100;
+}
+
+main .menu .container div h5 {
+  font-family: Roboto, sans-serif;
+  color: #A67245;
+  font-size: 1.3rem;
 }
 /*# sourceMappingURL=index.css.map */
