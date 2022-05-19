@@ -31,36 +31,14 @@ a {
 }
 
 body {
-  text-align: center;
   font-family: Poppins, sans-serif;
-  max-width: 1300px;
-  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
 }
 
-body:before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background: #11171F;
-  -webkit-animation: animBefore 1.5s ease forwards;
-          animation: animBefore 1.5s ease forwards;
-  -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
-}
-
-@-webkit-keyframes animBefore {
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes animBefore {
-  to {
-    opacity: 0;
-  }
+span {
+  font-family: Allura, serif;
 }
 
 .button {
@@ -72,5 +50,75 @@ body:before {
   border-radius: 50px;
   font-size: 0.9rem;
   padding: 12px 40px;
+}
+
+header {
+  height: 100%;
+  width: 100%;
+  background: url(/assets/img/bg-slider-06.jpg) center/cover;
+  padding: 0 5%;
+  color: #EEEEEE;
+  text-transform: uppercase;
+}
+
+header span {
+  text-transform: none;
+  font-size: 2.5rem;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: Roboto, sans-serif;
+}
+
+header nav .navbar, header nav .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav .navbar li {
+  margin: 0 50px;
+}
+
+header nav .icons li {
+  margin: 0 15px;
+}
+
+.container {
+  margin: 130px 0;
+}
+
+.container span {
+  color: #A67245;
+  font-size: 4rem;
+}
+
+.container h1 {
+  font-size: 4rem;
+  letter-spacing: 10px;
+}
+
+.container img {
+  margin: 20px 0;
+}
+
+.container h3 {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 10px;
+  color: #B8B8B8;
 }
 /*# sourceMappingURL=index.css.map */

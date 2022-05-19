@@ -41,30 +41,15 @@ a {
 }
 
 body {
-    text-align: center;
     font-family: $font2;
-    max-width: 1300px;
-    margin: 0 auto;
-
-    &:before {
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        background: $black2;
-        animation: animBefore 1.5s ease forwards;
-        animation-delay: 0.15s;
-
-        @keyframes animBefore {
-            to {
-                opacity: 0;
-            }
-        }
-    }
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
 }
 
+span {
+    font-family: $font1;
+}
 .button {
     cursor: pointer;
     background: $black1;
