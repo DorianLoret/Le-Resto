@@ -98,6 +98,16 @@ header nav .icons li {
   margin: 0 15px;
 }
 
+header nav li {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header nav li:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
 .container {
   margin: 130px 0;
 }

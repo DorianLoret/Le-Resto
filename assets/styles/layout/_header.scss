@@ -30,6 +30,14 @@ header {
         .icons li {
             margin: 0 15px;
         }
+
+        li {
+            transition: 0.3s;
+        }
+        
+        li:hover {
+            transform: scale(1.3);
+        }
     }
 }
 
