@@ -674,4 +674,75 @@ main .map .bg {
   height: 80vh;
   background: url(/assets/img/gmap.jpg) center/cover;
 }
+
+footer {
+  background: url(/assets/img/bg-footer.jpg);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  height: 40vh;
+}
+
+footer span {
+  color: #A67245;
+  font-size: 2.5rem;
+  display: block;
+  margin: 50px 0 35px 0;
+  width: 50%;
+  text-align: end;
+  margin-left: 45%;
+  text-align: start;
+}
+
+footer p {
+  width: 50%;
+  text-align: end;
+  margin-left: 45%;
+  text-align: start;
+  font-family: Roboto, sans-serif;
+  color: #EEEEEE;
+  line-height: 30px;
+}
+
+footer .right {
+  text-align: start;
+  padding: 0px 55px;
+}
+
+footer .right h3 {
+  font-family: Roboto, sans-serif;
+  color: #EEEEEE;
+  text-transform: uppercase;
+  margin-top: 55px;
+}
+
+footer .right input {
+  background: none;
+  outline: none;
+  border: 1px #A67245 solid;
+  color: #EEEEEE;
+  padding: 5px 15px 5px 7px;
+  opacity: 0.5;
+  margin: 20px 0 40px 0;
+}
+
+footer .right .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .right .socials .icons {
+  color: #EEEEEE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 40px;
+  margin-left: 40px;
+  opacity: 0.5;
+}
 /*# sourceMappingURL=index.css.map */

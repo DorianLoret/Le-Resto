@@ -1,0 +1,63 @@
+footer {
+    background: url(/assets/img/bg-footer.jpg);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 40vh;
+
+    span {
+        color: $orange1;
+        font-size: 2.5rem;
+        display: block;
+        margin: 50px 0 35px 0;
+        
+        width: 50%;
+        text-align: end;
+        margin-left: 45%;
+        text-align: start;
+    }
+    
+    p {
+        width: 50%;
+        text-align: end;
+        margin-left: 45%;
+        text-align: start;
+        font-family: $font3;
+        color: $white1;
+        line-height: 30px;
+    }
+
+    .right {
+        text-align: start;
+        padding: 0px 55px;
+
+        h3 {
+            font-family: $font3;
+            color: $white1;
+            text-transform: uppercase;
+            margin-top: 55px;
+        }
+
+        input {
+            background: none;
+            outline: none;
+            border: 1px $orange1 solid;
+            color: $white1;
+            padding: 5px 15px 5px 7px;
+            opacity: 0.5;
+            margin: 20px 0 40px 0;
+        }
+
+        .socials {
+            display: flex;
+
+            .icons {
+                color: $white1;
+                display: flex;
+                align-items: flex-end;
+                gap: 40px;
+                margin-left: 40px;
+                opacity: 0.5;
+            }
+        }
+    }
+}
