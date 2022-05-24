@@ -1,8 +1,14 @@
 footer {
-    background: url(/assets/img/bg-footer.jpg);
+    background: url(/assets/img/bg-footer.jpg) center/cover;
     display: grid;
     grid-template-columns: 50% 50%;
     height: 40vh;
+    
+    @media screen and (max-width: 1050px) {
+        display: block;
+        background: $black1;
+        height: 30vh;
+    }
 
     span {
         color: $orange1;
@@ -14,6 +20,10 @@ footer {
         text-align: end;
         margin-left: 45%;
         text-align: start;
+        
+        @media screen and (max-width: 1050px) {
+            display: none;
+        }
     }
     
     p {
@@ -24,11 +34,19 @@ footer {
         font-family: $font3;
         color: $white1;
         line-height: 30px;
+        
+        @media screen and (max-width: 1050px) {
+            display: none;
+        }
     }
 
     .right {
         text-align: start;
         padding: 0px 55px;
+        
+        @media screen and (max-width: 1050px) {
+            width: 100%;
+        }
 
         h3 {
             font-family: $font3;

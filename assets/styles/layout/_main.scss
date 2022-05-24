@@ -3,6 +3,10 @@
     display: grid;
     grid-template-columns: 50% 50%;
     background: $white1;
+    
+    @media screen and (max-width: 1050px) {
+        display: block;
+    }
 
     .store-left {
         height: 90%;
@@ -52,6 +56,10 @@ main {
     .menu {
         background: url(/assets/img/bg-menu-01.jpg) center/cover;
         height: 45vw;
+        
+        @media screen and (max-width: 1050px) {
+            height: 100vh;
+        }
         span {
             display: block;
             color: $orange1;
@@ -68,6 +76,7 @@ main {
             display: flex;
             align-items: center;
             justify-content: space-evenly;
+        
         }
 
         li {
@@ -75,6 +84,10 @@ main {
             font-family: $font3;
             border-bottom: $white1 1px solid;
             height: 35px;
+            
+            @media screen and (max-width: 1050px) {
+                font-size: 0.8rem;
+            }
         }
 
         .menu-abs {
@@ -96,6 +109,18 @@ main {
         background: $white1;
         margin-top: 20px;
         border-top: 4px $orange1 solid;
+        
+        @media screen and (max-width: 1050px) {
+            img {
+                width: 50px;
+            }
+        }
+
+        
+        @media screen and (max-width: 1050px) {
+            display: block;
+            height: 100vh;
+        }
 
         .italian-source-mushroom {
             grid-area: a;
@@ -144,18 +169,30 @@ main {
                 font-family: $font3;
                 font-size: 0.9rem;
                 letter-spacing: 1px;
+                
+            @media screen and (max-width: 1050px) {
+                font-size: 0.7rem;
+            }
             }
 
             h4 {
                 font-family: $font3;
                 color: $black1;
                 font-weight: 100;
+                
+            @media screen and (max-width: 1050px) {
+                font-size: 0.8rem;
+            }
             }
 
             h5 {
                 font-family: $font3;
                 color: $orange1;
                 font-size: 1.3rem;
+                
+            @media screen and (max-width: 1050px) {
+                font-size: 0.9rem;;
+            }
             }
         }
     }    
@@ -165,7 +202,11 @@ main {
         display: grid;
         grid-template-columns: 30% 70%;
         width: 70%;
-        margin: 70px auto;
+        margin: 300px auto 100px auto;
+        
+        @media screen and (max-width: 1050px) {
+            display: block;
+        }
 
         .reservation-left {
             background: rgb(8, 8, 8);
@@ -223,6 +264,10 @@ main {
                 width: 80%;
                 margin: 0 auto;
                 margin-bottom: 30px;
+                
+            @media screen and (max-width: 1050px) {
+                margin: 0 auto;
+            }
             }
 
             .form2 {
@@ -243,6 +288,11 @@ main {
                 padding: 15px 0;
                 outline: none;
                 margin: 0 30px;
+                
+            @media screen and (max-width: 1050px) {
+                display: block;
+                width: 90%;
+            }
             }
             input[type="time"] {
                 height: 48px;
@@ -253,6 +303,10 @@ main {
     .our-event {
         
         margin-top: 150px;
+        
+        @media screen and (max-width: 1050px) {
+            display: none;
+        }
 
         span {
             font-size: 3rem;
@@ -270,7 +324,7 @@ main {
         
         .grid {
 
-        width: 50%;
+        width: 70%;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 70% 30%;
@@ -429,6 +483,7 @@ main {
             .adress-and-time {
                 font-size: 0.7rem;
                 justify-content: center;
+                gap: 5px;
                 margin-bottom: 40px;
             }
         }        
@@ -443,7 +498,7 @@ main {
         .quote {
 
             background: $white1;
-            width: 50%;
+            width: 70%;
             margin: 0 auto;
             transform: translateY(50%);
 

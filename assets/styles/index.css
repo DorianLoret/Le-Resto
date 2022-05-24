@@ -80,6 +80,14 @@ header nav {
   font-family: Roboto, sans-serif;
 }
 
+@media screen and (max-width: 1050px) {
+  header nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 header nav .navbar, header nav .icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -92,7 +100,19 @@ header nav .navbar, header nav .icons {
 }
 
 header nav .navbar li {
-  margin: 0 50px;
+  margin: 0 40px;
+}
+
+@media screen and (max-width: 1220px) {
+  header nav .navbar li {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  header nav .navbar li {
+    display: none;
+  }
 }
 
 header nav .icons li {
@@ -109,9 +129,21 @@ header nav li:hover {
           transform: scale(1.3);
 }
 
+@media screen and (max-width: 1050px) {
+  .container {
+    margin-top: 100px;
+  }
+}
+
 .container span {
   color: #A67245;
   font-size: 4rem;
+}
+
+@media screen and (max-width: 1050px) {
+  .container span {
+    font-size: 3rem;
+  }
 }
 
 .container h1 {
@@ -119,8 +151,14 @@ header nav li:hover {
   letter-spacing: 10px;
 }
 
+@media screen and (max-width: 1050px) {
+  .container h1 {
+    font-size: 3rem;
+  }
+}
+
 .container img {
-  margin: 20px 0;
+  margin: 40px 0;
 }
 
 .container h3 {
@@ -136,6 +174,12 @@ header nav li:hover {
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
   background: #EEEEEE;
+}
+
+@media screen and (max-width: 1050px) {
+  .our-store {
+    display: block;
+  }
 }
 
 .our-store .store-left {
@@ -186,6 +230,12 @@ main .menu {
   height: 45vw;
 }
 
+@media screen and (max-width: 1050px) {
+  main .menu {
+    height: 100vh;
+  }
+}
+
 main .menu span {
   display: block;
   color: #A67245;
@@ -217,6 +267,12 @@ main .menu li {
   height: 35px;
 }
 
+@media screen and (max-width: 1050px) {
+  main .menu li {
+    font-size: 0.8rem;
+  }
+}
+
 main .menu .menu-abs {
   -webkit-transform: translateY(-40%);
           transform: translateY(-40%);
@@ -236,6 +292,19 @@ main .menu .container {
   background: #EEEEEE;
   margin-top: 20px;
   border-top: 4px #A67245 solid;
+}
+
+@media screen and (max-width: 1050px) {
+  main .menu .container img {
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  main .menu .container {
+    display: block;
+    height: 100vh;
+  }
 }
 
 main .menu .container .italian-source-mushroom {
@@ -318,10 +387,22 @@ main .menu .container div h3 {
   letter-spacing: 1px;
 }
 
+@media screen and (max-width: 1050px) {
+  main .menu .container div h3 {
+    font-size: 0.7rem;
+  }
+}
+
 main .menu .container div h4 {
   font-family: Roboto, sans-serif;
   color: #21201E;
   font-weight: 100;
+}
+
+@media screen and (max-width: 1050px) {
+  main .menu .container div h4 {
+    font-size: 0.8rem;
+  }
 }
 
 main .menu .container div h5 {
@@ -330,13 +411,25 @@ main .menu .container div h5 {
   font-size: 1.3rem;
 }
 
+@media screen and (max-width: 1050px) {
+  main .menu .container div h5 {
+    font-size: 0.9rem;
+  }
+}
+
 main .reservation {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 30% 70%;
       grid-template-columns: 30% 70%;
   width: 70%;
-  margin: 70px auto;
+  margin: 300px auto 100px auto;
+}
+
+@media screen and (max-width: 1050px) {
+  main .reservation {
+    display: block;
+  }
 }
 
 main .reservation .reservation-left {
@@ -397,6 +490,12 @@ main .reservation .reservation-right .form1, main .reservation .reservation-righ
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 1050px) {
+  main .reservation .reservation-right .form1, main .reservation .reservation-right .form2 {
+    margin: 0 auto;
+  }
+}
+
 main .reservation .reservation-right .form2 {
   margin-bottom: 100px;
 }
@@ -416,12 +515,25 @@ main .reservation .reservation-right input, main .reservation .reservation-right
   margin: 0 30px;
 }
 
+@media screen and (max-width: 1050px) {
+  main .reservation .reservation-right input, main .reservation .reservation-right select {
+    display: block;
+    width: 90%;
+  }
+}
+
 main .reservation .reservation-right input[type="time"] {
   height: 48px;
 }
 
 main .our-event {
   margin-top: 150px;
+}
+
+@media screen and (max-width: 1050px) {
+  main .our-event {
+    display: none;
+  }
 }
 
 main .our-event span {
@@ -439,7 +551,7 @@ main .our-event img {
 }
 
 main .our-event .grid {
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
@@ -614,6 +726,7 @@ main .our-event .right .adress-and-time {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 5px;
   margin-bottom: 40px;
 }
 
@@ -624,7 +737,7 @@ main .map .empty {
 
 main .map .quote {
   background: #EEEEEE;
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
@@ -676,12 +789,20 @@ main .map .bg {
 }
 
 footer {
-  background: url(/assets/img/bg-footer.jpg);
+  background: url(/assets/img/bg-footer.jpg) center/cover;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
   height: 40vh;
+}
+
+@media screen and (max-width: 1050px) {
+  footer {
+    display: block;
+    background: #21201E;
+    height: 30vh;
+  }
 }
 
 footer span {
@@ -695,6 +816,12 @@ footer span {
   text-align: start;
 }
 
+@media screen and (max-width: 1050px) {
+  footer span {
+    display: none;
+  }
+}
+
 footer p {
   width: 50%;
   text-align: end;
@@ -705,9 +832,21 @@ footer p {
   line-height: 30px;
 }
 
+@media screen and (max-width: 1050px) {
+  footer p {
+    display: none;
+  }
+}
+
 footer .right {
   text-align: start;
   padding: 0px 55px;
+}
+
+@media screen and (max-width: 1050px) {
+  footer .right {
+    width: 100%;
+  }
 }
 
 footer .right h3 {
